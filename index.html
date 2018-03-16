@@ -3,7 +3,6 @@
   <head>
     <title>chipthrasher.com</title>
     <meta charset="utf-8">
-    <base href="#" target="_blank" />
     <meta name="og:title" content="chipthrasher.com">
     <meta name="og:site_name" content="chipthrasher.com">
     <meta name="og:url" content="http://chipthrasher.com">
@@ -14,6 +13,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="copyright" content="Chip Thrasher">
     <meta name="robots" content="index,follow">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68800023-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-68800023-1');
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
     <style>
       @import url('https://fonts.googleapis.com/css?family=Montserrat:300');
@@ -32,16 +40,8 @@
         padding: 15px;
         display: inline-block;
       }
-      h1 {
-        margin: 0px;
-        font-size: 40px;
-        font-weight: 100;
-        flex: none;
-      }
       .links {
-        margin-top: 20px;
         flex: none;
-        z-index: 102;
       }
       .container {
         display: flex;
@@ -55,7 +55,6 @@
   </head>
   <body><div class="container">
     <div class="inner">
-      <h1>chipthrasher.com</h1>
       <div class="links">
         <a href="https://soundcloud.com/stereofld"><i class="fab fa-soundcloud"></i></a>
         <a href="https://open.spotify.com/artist/5z6WAqlZ3Qg8FovKGmVP2z"><i class="fab fa-spotify"></i></a>
