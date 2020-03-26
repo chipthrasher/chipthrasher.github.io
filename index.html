@@ -7,7 +7,7 @@
     <meta name="og:site_name" content="Chip Thrasher">
     <meta name="og:url" content="https://chipthrasher.com">
     <meta name="keywords" content="chip, thrasher, music, stereofield, graphic design, web development, video production">
-    <meta name="description" content="">
+    <meta name="description" content="Chip Thrasher — chipthrasher.com">
     <meta name="og:description" content="">
     <meta name="author" content="Chip Thrasher, thechipthrasher@gmail.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,71 +16,115 @@
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68800023-1"></script><script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-68800023-1'); </script>
     <style>
-      @import url('https://fonts.googleapis.com/css?family=K2D:700');
-      @import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+      @import url('https://fonts.googleapis.com/css?family=Assistant:300,700&display=swap');
       body {
         margin: 0px;
-        background: #282C34;
+        background: #111;
         height: 100vh;
         width: 100vw;
-        overflow: hidden;
         z-index: 1;
-        color: #C1C0C7;
-        font-family: "K2D", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
-      div#particles-js {
-        height: 100vh;
-        width: 100vw;
-        z-index: 2;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-      }
-      div#center {
-        height: 100vh;
-        width: 100vw;
-        z-index: 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        font-size: 40px;
-      }
-      div#footer {
-        z-index: 4;
-        position: fixed;
-        text-align: center;
-        width: 100vw;
-        bottom: 40px;
-        font-size: 25px;
+        color: #eee;
+        font-family: "Assistant", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 300;
       }
       a {
         text-decoration: none;
         color: inherit;
       }
-      i.fab {
-        padding: 20px;
+      .container {
+        margin: auto;
+        max-width: 900px;
+        padding: 0px 30px 0px 30px;
+      }
+      .title {
+        padding: 40px 0 40px 0;
+        display: flex;
+        font-size: 20px;
+      }
+      .left {
+        font-weight: 700;
+      }
+      .right {
+        margin-left: auto;
+      }
+      .right a {
+        border-bottom: 1px solid transparent;
+        transition: 0.1s all;
+        margin-left: 20px;
+      }
+      .right a:hover {
+        border-bottom: 1px solid #eee;
+      }
+      .gallery { /* Masonry container */
+        column-count: 3;
+        column-gap: 30px;
+      }
+      .item { /* Masonry bricks or child elements */
+        display: inline-block;
+        margin: 0 0 30px;
+        width: 100%;
+      }
+      .item img {
+        width: 100%;
+      }
+      @media only screen and (max-width: 700px) {
+        .gallery {
+          column-count: 2;
+        }
+      }
+      .footer {
+        padding: 40px 0 40px 0;
+        text-align: center;
+        color: #999;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
-    <div id="footer">
-      <a href="https://youtube.com/chipthrasher"><i class="fab fa-youtube"></i></a>
-      <a href="mailto:thechipthrasher@gmail.com"><i class="fas fa-envelope"></i></a>
+    <div class="container">
+      <div class="title">
+        <div class="left">
+          <a href="">Chip Thrasher</a>
+        </div>
+        <div class="right">
+          <a href="https://open.spotify.com/artist/5z6WAqlZ3Qg8FovKGmVP2z">Music</a>
+          <a href="https://youtube.com/chipthrasher">Video</a>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="item">
+          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/highway.jpg">
+        </div>
+        <div class="item">
+          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/camera.jpg">
+        </div>
+        <div class="item">
+          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/chips.jpg">
+        </div>
+        <div class="item">
+          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/philosophy.JPG">
+        </div>
+        <div class="item">
+          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/clouds.jpg">
+        </div>
+        <div class="item">
+          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/parking.JPG">
+        </div>
+        <div class="item">
+          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/dough.JPG">
+        </div>
+        <div class="item">
+          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/walking.JPG">
+        </div>
+        <div class="item">
+          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/meat.jpg">
+        </div>
+        <div class="item">
+          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/cookies.JPG">
+        </div>
+      </div>
+      <div class="footer">Copyright &copy; 2020 Chip Thrasher. All rights reserved.</div>
     </div>
-    <div id="center">
-      Boring website!
-    </div>
-    <div id="particles-js"></div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="particles.min.js"></script>
-    <script>
-      particlesJS.load('particles-js', 'config.json', function() {
-        console.log('callback - particles.js config loaded');
-      });
-    </script>
   </body>
 </html>
