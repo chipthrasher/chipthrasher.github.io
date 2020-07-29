@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;600&display=swap');
+
+body {
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #2b3342;
+  color: #e3e6ea;
+
+  font-family: "Recursive", "Open Sans", sans-serif;
+}
+div.container {
+  animation: fade 1s;
+  max-width: 550px;
+  text-align: center;
+  line-height: 1.5;
+  padding: 30px;
+}
+div.title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 35px;
+}
+div.subtitle {
+  font-weight: 300;
+  font-size: 20px;
+
+  color: #9eabbf;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container a {
+  border-bottom: 2px solid #9eabbf;
+  font-weight: 600;
+  transition: 0.2s all;
+}
+.container a:hover {
+  color: #e3e6ea;
+  border-bottom-color: #e3e6ea;
+}
+div.footer {
+  position: absolute;
+  bottom: 30px;
+  font-weight: 600;
+
+  color: #798393;
+}
+div.code {
+  padding: 20px 0px;
+  font-family: monospace;
+  font-weight: bold;
+}
+@keyframes fade {
+  0% {
+    opacity: 0%;
+    /* transform: translateX(-20%); */
+  }
+  100% {
+    opacity: inherit;
+    /* transform: translateX(0); */
+  }
+}
