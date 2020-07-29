@@ -7,124 +7,75 @@
     <meta name="og:site_name" content="Chip Thrasher">
     <meta name="og:url" content="https://chipthrasher.com">
     <meta name="keywords" content="chip, thrasher, music, stereofield, graphic design, web development, video production">
-    <meta name="description" content="Chip Thrasher — chipthrasher.com">
-    <meta name="og:description" content="">
-    <meta name="author" content="Chip Thrasher, thechipthrasher@gmail.com">
+    <meta name="description" content="Chip Thrasher — Video producer & graphic designer">
+    <meta name="og:description" content="Chip Thrasher — Video producer & graphic designer">
+    <meta name="author" content="Chip Thrasher">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="copyright" content="Chip Thrasher">
     <meta name="robots" content="index,follow">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68800023-1"></script><script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-68800023-1'); </script>
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Assistant:300,700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;600&display=swap');
+
       body {
         margin: 0px;
-        background: #111;
         height: 100vh;
-        width: 100vw;
-        z-index: 1;
-        color: #eee;
-        font-family: "Assistant", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #2b3342;
+        color: #e3e6ea;
+
+        font-family: "Recursive", "Open Sans", sans-serif;
+      }
+      div.container {
+        animation: slide 1s;
+        max-width: 550px;
+        text-align: center;
+        line-height: 1.5;
+        padding: 30px;
+      }
+      div.title {
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        font-size: 35px;
+      }
+      div.subtitle {
         font-weight: 300;
+        font-size: 20px;
+
+        color: #9eabbf;
       }
       a {
-        text-decoration: none;
         color: inherit;
+        text-decoration: none;
+        border-bottom: 2px solid #9eabbf;
+        font-weight: 600;
+        transition: 0.2s all;
       }
-      .container {
-        margin: auto;
-        max-width: 900px;
-        padding: 0px 30px 0px 30px;
+      a:hover {
+        color: #e3e6ea;
+        border-bottom-color: #e3e6ea;
       }
-      .title {
-        padding: 40px 0 40px 0;
-        display: flex;
-        font-size: 20px;
-      }
-      .left {
-        font-weight: 700;
-      }
-      .right {
-        margin-left: auto;
-      }
-      .right a {
-        border-bottom: 1px solid transparent;
-        transition: 0.1s all;
-        margin-left: 20px;
-      }
-      .right a:hover {
-        border-bottom: 1px solid #eee;
-      }
-      .gallery { /* Masonry container */
-        column-count: 3;
-        column-gap: 30px;
-      }
-      .item { /* Masonry bricks or child elements */
-        display: inline-block;
-        margin: 0 0 30px;
-        width: 100%;
-      }
-      .item img {
-        width: 100%;
-      }
-      @media only screen and (max-width: 700px) {
-        .gallery {
-          column-count: 2;
+      @keyframes slide {
+        0% {
+          opacity: 0%;
+          /* transform: translateX(-20%); */
         }
-      }
-      .footer {
-        padding: 40px 0 40px 0;
-        text-align: center;
-        color: #999;
-        font-weight: bold;
+        100% {
+          opacity: inherit;
+          /* transform: translateX(0); */
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="title">
-        <div class="left">
-          <a href="">Chip Thrasher</a>
-        </div>
-        <div class="right">
-          <a href="https://open.spotify.com/artist/5z6WAqlZ3Qg8FovKGmVP2z">Music</a>
-          <a href="https://youtube.com/chipthrasher">Video</a>
-        </div>
-      </div>
-      <div class="gallery">
-        <div class="item">
-          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/highway.jpg">
-        </div>
-        <div class="item">
-          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/camera.jpg">
-        </div>
-        <div class="item">
-          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/chips.jpg">
-        </div>
-        <div class="item">
-          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/philosophy.JPG">
-        </div>
-        <div class="item">
-          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/clouds.jpg">
-        </div>
-        <div class="item">
-          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/parking.JPG">
-        </div>
-        <div class="item">
-          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/dough.JPG">
-        </div>
-        <div class="item">
-          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/walking.JPG">
-        </div>
-        <div class="item">
-          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/meat.jpg">
-        </div>
-        <div class="item">
-          <img src="https://github.com/chipthrasher/chipthrasher.github.io/raw/master/cookies.JPG">
-        </div>
-      </div>
-      <div class="footer">Copyright &copy; 2020 Chip Thrasher. All rights reserved.</div>
+      <div class="title">Chip Thrasher</div>
+      <div class="subtitle">My name is Chip, and I'm a video producer & graphic designer. On a low budget or need a quick turnaround on your project? I'm here to help. <a href="mailto:hello@chipthrasher.com">Send me an email</a> and we can find out what I can do for you.</div>
     </div>
   </body>
 </html>
