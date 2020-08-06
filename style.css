@@ -66,3 +66,31 @@ div.code {
     /* transform: translateX(0); */
   }
 }
+div.portal {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-weight: bold;
+}
+div.left {
+
+}
+div.right {
+
+}
+input {
+  background: none;
+  border: none;
+  color: #e3e6ea;
+  padding: 10px;
+  transition: 0.1s all;
+  font-family: monospace;
+  display: block;
+  margin-top: 10px;
+}
+input:hover, input:focus {
+  background: rgba(255, 255, 255, 0.1);
+}
+::placeholder {
+  color: #9eabbf;
+}

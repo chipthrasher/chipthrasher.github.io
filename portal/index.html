@@ -19,12 +19,46 @@
   </head>
   <body>
     <div class="container">
-      <div class="title">Chip Thrasher</div>
-      <div class="subtitle">My name is Chip, and I'm a video producer & graphic designer. On a low budget or need a quick turnaround on your project? I'm here to help. <a href="mailto:hello@chipthrasher.com">Send me an email</a> and we can find out what I can do for you.</div>
+      <div class="title">Portal Calculator</div>
+      <div class="subtitle">
+        <div class="portal">
+          <div class="left">
+            Nether
+            <input name="netherx" id="netherx" placeholder="Nether X">
+            <input name="netherz" id="netherz" placeholder="Nether Z">
+          </div>
+          <div class="right">
+            Overworld
+            <input name="worldx" id="worldx" placeholder="Overworld X">
+            <input name="worldz" id="worldz" placeholder="Overworld Z">
+          </div>
+        </div>
+      </div>
     </div>
     <div class="footer">
       <a href="/">Home</a> &middot; <a href="https://fanlink.to/pathways">Music</a> &middot; <a href="/minecraft">Minecraft</a> &middot; <a href="/portal">Portal Calculator</a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+      });
+      $('#netherx').on('change', function() {
+        let netherx = 8 * parseInt($(this).val());
+        if(netherx != NaN) $('#worldx').val(netherx);
+      });
+      $('#netherz').on('change', function() {
+        let netherz = 8 * parseInt($(this).val());
+        if(netherz != NaN) $('#worldz').val(netherz);
+      });
+      $('#worldx').on('change', function() {
+        let worldx = Math.floor(parseInt($(this).val()) / 8);
+        if(worldx != NaN) $('#netherx').val(worldx);
+      });
+      $('#worldz').on('change', function() {
+        let worldz = Math.floor(parseInt($(this).val()) / 8);
+        if(worldz != NaN) $('#netherz').val(worldz);
+      });
+    </script>
   </body>
 </html>
