@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: chipthrasher.com
+Token: 6ea78035b40a6eb9813c12086cbb45aa7ecb30ecb192cf210ca95739df220690
